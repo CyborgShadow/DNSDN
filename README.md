@@ -6,6 +6,13 @@ Requirements:
 - web.py - This can be installed after having python by running:
   - sudo easy_install web.py
 
+Execution:
+- Simply place rest_api.py on your local server and run it with python. It will bind natively to port 8080.
+- To bind to port 80, call: python rest_api.pi 80
+
+Unit Tests:
+- bl_test.py and simple_get.py tests the entire blacklist against my own personal server. Update the site variable to your server to test locally.
+
 What this tool does:
 - Intakes a request URI via GET:
   - A sample looks like: GET /urlinfo/1/{hostname_and_port}/{original_path_and_query_string}
