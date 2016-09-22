@@ -11,6 +11,8 @@ Processing mechanisms:
 - Simple blacklist by checking a database
 - Some URLs may be whitelisted
 - Initial blacklist generated from: https://zeustracker.abuse.ch/blocklist.php?download=compromised on 2016.09.22
+- Whitelists will always override a blacklist
+- Whitelisting a base URL will override all blacklists for any URI path within that domain.
 
 Potential Future scopes of tool (not in this release):
 - Add 3rd party checks for DNS addresses
